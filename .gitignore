@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+# UN WPP files are fetched, not committed
+data/popprojAge1dt.rda
+data/popAge1dt.rda
+# LaTeX build artefacts, if the manuscript is added later
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.synctex.gz

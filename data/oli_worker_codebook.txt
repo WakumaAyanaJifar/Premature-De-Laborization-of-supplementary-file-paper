@@ -1,0 +1,54 @@
+Online Labour Index worker data codebook
+
+Otto Kässi / otto.kassi@etla.fi
+Last updated 2020-11-23
+
+1) Background
+
+This document describes the data used in the Online Labour Index worker visualisation (seen in https://ilabour.oii.ox.ac.uk and https://livedataoxford.shinyapps.io/1490198815-8pmoe2dwg9r7n6d/).
+
+The visualisation builds on file worker_countrydata-%Y-%m-%d, where '%Y-%m-%d' is the date of data publication in ISO format. 
+
+The OLI worker data is a  weighted sample of recently active worker profiles collected from Guru.com, Freelancer.com (from 1/2019 onwards), Peopleperhour.com, and Fiverr.com (until 1/2018).
+
+The methodology behind the data collection is explained in this blog post: https://ilabour.oii.ox.ac.uk/measuring-the-supply-of-digital-labour-how-the-oli-worker-supplement-is-constructed/
+
+2) File descriptions
+
+The worker_countrydata file contains information on the distribution of worker occupation, and self-reported home countries. The file contains the following columns: 
+
+ Timestamp: ISO formatted date stamp of the observation date. The data collection is scheduled to run once in 24 hours, but there might be gaps in the time series. 
+
+ Country: Worker self-declared home country
+
+ Occupation: The occupation of the worker inferred from platform taxonomies
+ 
+ Num_workers: Number of workers in a given country/occupation combination
+ 
+ Num_projects: Deprecated - not to be used
+ 
+Countries_continents_regions file maps countries to larger geographical regions such as continents and subregions. Fields are 
+ Country
+ 
+ Continent
+ 
+ Subregion
+ 
+These are self-explanatory. Note however, that some countries might be mentioned more than once (e.g. "Russia" and "Russian Federation").
+
+3) Interpretation of data
+
+The sample sizes vary between platforms, and, as platforms change, the platform-specific sample sizes might also change. To account for this, we have weighed the samples by the number of vacancies on the platforms (i.e. the OLI demand side). 
+
+While the weighing+sampling ensures that the sample sizes are proportional to platform sizes, this has a few side effects. First, num_workers field -- unintuitively -- sometimes has non-integers. Second, the numbers can only be used to infer _relative_ shares. For example, this means that the following data does not imply that there are 68 Software development and technology specialists in Albania. Instead, it is reasonable to infer that the share of Albanians who do software development and technology is 68/(14+42+68+20)
+
+timestamp,country,occupation,num_workers,num_projects
+2017-06-16,Albania,Clerical and data entry,14.0,0
+2017-06-16,Albania,Creative and multimedia,42.0,0
+2017-06-16,Albania,Software development and technology,68.0,0
+2017-06-16,Albania,Writing and translation,20.0,0
+
+It is also worth highlighting that the sample sizes do not increase with the size of the workforce. Thus, drawing any conclusions on the increase or decrease in labour supply over time using this data is suspect.
+
+
+

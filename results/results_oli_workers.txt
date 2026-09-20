@@ -1,0 +1,64 @@
+==============================================================================
+OLI WORKER SUPPLEMENT: PORTFOLIO EXPOSURE
+==============================================================================
+Coverage 2017-06-16 to 2024-09-01 | 1,372,681 rows | 214 countries
+
+1. Portfolio exposure by world region, January to August 2023-24
+       region  portfolio_exposure  share_of_world
+North America               0.618           6.201
+       Europe               0.609          16.180
+      Oceania               0.602           1.010
+       Africa               0.587           6.642
+         Asia               0.573          64.051
+South America               0.550           5.890
+
+2. African occupational mix, January to August shares (%)
+occupation  Writing and translation  Software development and technology  Clerical and data entry  Professional services  Sales and marketing support  Creative and multimedia  portfolio_exposure
+year                                                                                                                                                                                              
+2017                         33.971                               19.814                    9.360                  5.458                       11.793                   19.604               0.626
+2018                         31.827                               19.090                    2.532                  7.603                       14.962                   23.985               0.607
+2019                         32.046                               18.852                    5.130                  4.770                       13.254                   25.949               0.608
+2020                         33.559                               26.653                    3.913                  3.430                        5.823                   26.623               0.632
+2021                         29.721                               26.550                    5.442                  3.044                        2.670                   32.573               0.619
+2022                         17.921                               28.230                    4.907                  2.570                        3.161                   43.210               0.582
+2023                         12.992                               36.031                    3.240                  1.814                        1.806                   44.118               0.587
+2024                         12.683                               36.634                    3.137                  1.359                        1.954                   44.234               0.587
+
+3. Weighted trajectory exposure, ten sample economies, January to August 2023-24
+iso3      country  trajectory_exposure_weighted  sample_workers
+ KEN        Kenya                         0.703     1125750.980
+ ETH     Ethiopia                         0.680       62991.085
+ UGA       Uganda                         0.670        8030.569
+ NGA      Nigeria                         0.622      766150.520
+ ZAF South Africa                         0.599      187646.674
+ GHA        Ghana                         0.558       61677.638
+ EGY        Egypt                         0.541     3893959.328
+ TZA     Tanzania                         0.513       11787.222
+ RWA       Rwanda                         0.445        4331.388
+ SEN      Senegal                         0.436       17705.568
+
+   Occupational composition (%), same window
+      Writing and translation  Software development and technology  Clerical and data entry  Professional services  Sales and marketing support  Creative and multimedia
+iso3                                                                                                                                                                    
+KEN                     50.03                                30.20                     5.08                   2.94                         3.78                     7.98
+ETH                     11.08                                66.58                     1.38                   1.33                         0.14                    19.49
+UGA                      8.46                                63.92                     0.00                   8.29                         6.94                    12.39
+NGA                     17.19                                37.29                     9.88                   3.46                         4.63                    27.55
+ZAF                     17.69                                30.21                     3.94                  11.41                         7.21                    29.54
+GHA                      4.65                                37.53                     0.88                   0.95                         4.55                    51.43
+EGY                      4.24                                33.02                     1.78                   0.48                         1.05                    59.43
+TZA                     14.82                                 7.08                     0.00                   2.91                        48.78                    26.41
+RWA                      7.50                                 0.96                     0.00                   0.76                        12.50                    78.27
+SEN                      0.58                                 7.55                     0.00                   0.14                         0.00                    91.73
+
+4. African supply-side composition shift, pre 2021-22 vs post 2023-24
+                                         beta  share_pre  share_post  change_pp
+occupation                                                                     
+Writing and translation                 0.759     23.045      12.835    -10.210
+Software development and technology     0.751     27.500      36.336      8.835
+Clerical and data entry                 0.608      5.140       3.188     -1.952
+Professional services                   0.524      2.776       1.584     -1.192
+Sales and marketing support             0.460      2.948       1.881     -1.067
+Creative and multimedia                 0.408     38.591      44.177      5.586
+   Spearman rho (exposure vs change in share): -0.429
+   Portfolio exposure: pre 0.5982, post 0.5869

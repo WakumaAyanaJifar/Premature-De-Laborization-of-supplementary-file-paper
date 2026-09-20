@@ -1,0 +1,207 @@
+Country;Continent;Subregion
+American Samoa;Oceania;Oceania
+Aruba;North America;Central America
+Afghanistan;Asia;Asia
+Albania;Europe;Europe
+Algeria;Africa;Africa
+Andorra;Europe;Europe
+Angola;Africa;Africa
+Antigua and Barbuda;North America;Central America
+Argentina;South America;South America
+Armenia;Asia;Asia
+Australia;Oceania;Oceania
+Austria;Europe;Europe
+Azerbaijan;Asia;Asia
+Bahamas;North America;Central America
+Bahrain;Asia;Asia
+Bangladesh;Asia;South Asia
+Barbados;North America;Central America
+Belarus;Europe;Europe
+Belgium;Europe;Europe
+Belize;North America;Central America
+Benin;Africa;Africa
+Bermuda;North America;Central America
+Bhutan;Asia;Asia
+Bolivia;South America;South America
+Bosnia and Herzegovina;Europe;Europe
+Botswana;Africa;Africa
+Brazil;South America;South America
+British Virgin Islands;North America;Central America
+Brunei;Asia;Asia
+Bulgaria;Europe;Europe
+Cambodia;Asia;Southeast Asia
+Cameroon;Africa;Africa
+Canada;North America;North America
+Cape Verde;Africa;Africa
+Chile;South America;South America
+China;Asia;Asia
+Colombia;South America;South America
+Congo, the Democratic Republic;Africa;Africa
+Congo;Africa;Africa
+Costa Rica;North America;Central America
+Croatia;Europe;Europe
+Curacao;North America;Central America
+CW;North America;Central America
+Cyprus;Europe;Europe
+Czech Republic;Europe;Europe
+Denmark;Europe;Europe
+Djibouti;Africa;Africa
+Dominica;North America;Central America
+Dominican Republic;North America;Central America
+Ecuador;South America;South America
+Egypt;Africa;Africa
+El Salvador;North America;Central America
+Estonia;Europe;Europe
+Ethiopia;Africa;Africa
+Eritrea;Africa;Africa
+Finland;Europe;Europe
+France;Europe;Europe
+Georgia;Asia;Asia
+Germany;Europe;Europe
+Ghana;Africa;Africa
+Gibraltar;Europe;Europe
+Greece;Europe;Europe
+Grenada;North America;Central America
+Guam;Oceania;Oceania
+Guatemala;North America;Central America
+Guinea;Africa;Africa
+Guyana;South America;South America
+Haiti;North America;Central America
+Honduras;North America;Central America
+Hong Kong;Asia;Asia
+Hungary;Europe;Europe
+Iceland;Europe;Europe
+India;Asia;South Asia
+Indonesia;Asia;Southeast Asia
+Iran;Asia;Asia
+Iraq;Asia;Asia
+Ireland;Europe;Europe
+Isle of Man;Europe;Europe
+Israel;Asia;Asia
+Italy;Europe;Europe
+Jamaica;North America;Central America
+Japan;Asia;Asia
+Jersey;Europe;Europe
+Jordan;Asia;Asia
+Kazakhstan;Asia;Asia
+Kenya;Africa;Africa
+Kiribati;Oceania;Oceania
+Kosovo;Europe;Europe
+Kuwait;Asia;Asia
+Laos;Asia;Southeast Asia
+Latvia;Europe;Europe
+Lebanon;Asia;Asia
+Liberia;Africa;Africa
+Libya;Africa;Africa
+Lithuania;Europe;Europe
+Luxembourg;Europe;Europe
+Macedonia;Europe;Europe
+Madagascar;Africa;Africa
+Malawi;Africa;Africa
+Malaysia;Asia;Southeast Asia
+Maldives;Asia;Asia
+Malta;Europe;Europe
+Martinique;North America;Central America
+Mauritania;Africa;Africa
+Mauritius;Africa;Africa
+Mexico;North America;Central America
+Moldova;Europe;Europe
+Mongolia;Asia;Asia
+Montenegro;Europe;Europe
+Montserrat;North America;Central America
+Morocco;Africa;Africa
+Mozambique;Africa;Africa
+Namibia;Africa;Africa
+Nepal;Asia;Asia
+Netherlands;Europe;Europe
+New Caledonia;Oceania;Oceania
+New Zealand;Oceania;Oceania
+Nicaragua;North America;Central America
+Nigeria;Africa;Africa
+Norway;Europe;Europe
+Oman;Asia;Asia
+Paraguay;South America;South America
+Pakistan;Asia;South Asia
+Palestine;Asia;Asia
+Palestinian Territories;Asia;Asia
+Panama;North America;Central America
+Peru;South America;South America
+Philippines;Asia;Southeast Asia
+Poland;Europe;Europe
+Portugal;Europe;Europe
+Puerto Rico;North America;Central America
+Qatar;Asia;Asia
+Reunion;Africa;Africa
+Romania;Europe;Europe
+Russia;Europe;Europe
+Saint Lucia;North America;Central America
+Saudi Arabia;Asia;Asia
+Senegal;Africa;Africa
+Serbia;Europe;Europe
+Sierra Leone;Africa;Africa
+Singapore;Asia;Asia
+Sint Maarten;North America;Central America
+Slovakia;Europe;Europe
+Slovenia;Europe;Europe
+South Africa;Africa;Africa
+South Korea;Asia;Asia
+Spain;Europe;Europe
+Sri Lanka;Asia;South Asia
+Sudan;Africa;Africa
+Suriname;South America;South America
+Syrian Arab Republic;Africa;Africa
+Syria;Africa;Africa
+Swaziland;Africa;Africa
+Sweden;Europe;Europe
+Switzerland;Europe;Europe
+Taiwan;Asia;Asia
+Tanzania;Africa;Africa
+Thailand;Asia;Southeast Asia
+Togo;Africa;Africa
+Trinidad and Tobago;North America;Central America
+Tunisia;Africa;Africa
+Turkey;Asia;Asia
+Turks and Caicos Islands;North America;Central America
+Uganda;Africa;Africa
+Ukraine;Europe;Europe
+United Arab Emirates;Asia;Asia
+United Kingdom;Europe;Europe
+United States;North America;North America
+Uruguay;South America;South America
+Uzbekistan;Asia;Asia
+Venezuela;South America;South America
+Vietnam;Asia;Asia
+Yemen;Asia;Asia
+Zambia;Africa;Africa
+Zimbabwe;Africa;Africa
+Somalia;Africa;Africa
+Tanzania, United Republic of;Africa;Africa
+Kazakstan;Asia;Asia
+Gabon;Africa;Africa
+Myanmar;Asia;Asia
+Saint Vincent and the Grenadin;Asia;Asia
+French Polynesia;Oceania;Oceania
+Guernsey;Europe;Europe
+Northern Mariana Islands;Oceania;Oceania
+Saint Vincent and Grenadin;Asia;Asia
+Cote d'Ivoire;Africa;Africa
+Cote D'Ivoire;Africa;Africa
+Tajikistan;Asia;Asia
+Seychelles;Africa;Africa
+Mali;Africa;Africa
+North Macedonia;Europe;Europe
+Gambia;Africa;Africa
+Lao PDR;Asia;South Asia
+Kyrgyzstan;Asia;Asia
+Lao People's Democratic Republ;Asia;Asia
+Burundi;Africa;Africa
+St. Kitts;North America;Central America
+St. Lucia;Africa;Africa
+South Sudan;Africa;Africa
+Turkmenistan;Asia;Asia
+Northern Cyprus;Europe;Europe
+Burkina Faso;Africa;Africa
+Rwanda;Africa;Africa
+Samoa;Oceania;Oceania
+Iran, Islamic Republic of;Asia;Asia
+Guadeloupe;North America;Central America

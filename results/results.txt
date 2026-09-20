@@ -1,0 +1,142 @@
+==============================================================================
+SECTION A. OCCUPATIONAL EXPOSURE
+==============================================================================
+
+A1. Mean exposure (beta) by SOC major group, n = 923
+soc_major                                   major_label   n  beta_gpt4  beta_human  jobzone
+       15                     Computer and mathematical  36      0.745       0.599    4.000
+       43             Office and administrative support  51      0.608       0.485    2.333
+       13             Business and financial operations  48      0.528       0.517    3.833
+       17                  Architecture and engineering  56      0.494       0.425    3.786
+       23                                         Legal   7      0.494       0.413    4.286
+       27 Arts, design, entertainment, sports and media  40      0.470       0.375    3.450
+       11                                    Management  56      0.464       0.437    3.893
+       19             Life, physical and social science  60      0.464       0.489    4.300
+       41                             Sales and related  22      0.460       0.492    2.818
+       25           Educational instruction and library  62      0.435       0.420    4.565
+       29        Healthcare practitioners and technical  89      0.342       0.281    4.270
+       21                  Community and social service  14      0.320       0.362    4.500
+       33                            Protective service  26      0.287       0.280    2.615
+       31                            Healthcare support  19      0.241       0.134    2.526
+       53            Transportation and material moving  52      0.216       0.160    2.250
+       39                     Personal care and service  31      0.204       0.227    2.387
+       35                  Food preparation and serving  16      0.137       0.132    1.812
+       49          Installation, maintenance and repair  50      0.135       0.099    2.620
+       51                                    Production 107      0.130       0.077    2.112
+       45                 Farming, fishing and forestry  12      0.130       0.095    1.583
+       37 Building and grounds cleaning and maintenance   8      0.126       0.120    2.000
+       47                   Construction and extraction  61      0.069       0.053    2.049
+
+A2. Sector-level mean exposure (ISIC-aligned mapping)
+              mean    std  count
+sector                          
+agriculture  0.130  0.099     12
+industry     0.114  0.115    218
+services     0.421  0.194    693
+human-rated: {'agriculture': 0.095, 'industry': 0.075, 'services': 0.378}
+
+A3. Exposure by O*NET Job Zone, all occupations
+ jobzone   n  beta_gpt4  beta_human
+       1  31      0.058       0.066
+       2 295      0.199       0.161
+       3 219      0.334       0.270
+       4 224      0.517       0.469
+       5 154      0.447       0.426
+
+A4. Exposure by Job Zone, tradable cognitive bundle only
+ jobzone  n  beta_gpt4  beta_human
+       2 36      0.565       0.452
+       3 22      0.691       0.566
+       4 47      0.703       0.607
+       5  7      0.698       0.653
+
+A5. OLS beta ~ jobzone (all occupations): slope=0.1068 (se 0.0053, t=20.33), intercept=0.0041, R2=0.310, n=923
+
+A5. OLS beta ~ jobzone (tradable cognitive bundle): slope=0.0575 (se 0.0163, t=3.54), intercept=0.4707, R2=0.102, n=112
+
+A5. OLS beta ~ jobzone (subsistence/physical base): slope=0.1150 (se 0.0105, t=10.97), intercept=-0.0887, R2=0.230, n=404
+
+A6. Bundle means. Tradable cognitive: 0.656 (sd 0.176, n=112). Physical/subsistence base: 0.172 (sd 0.154, n=404). Difference 0.484 (se 0.018, t=26.50).
+    Human-rated equivalents: 0.552 vs 0.140.
+
+A7. Within the bundle, job zones 1-3 mean 0.613 (n=58) vs job zones 4-5 mean 0.702 (n=54); difference -0.089 (se 0.032, t=-2.79).
+
+==============================================================================
+SECTION B. STOCK VERSUS TRAJECTORY EXPOSURE
+==============================================================================
+iso3      country     agr     ind     srv  stock_exposure  trajectory_exposure   ratio
+ TZA     Tanzania  65.090   8.051  26.859           0.207                0.656   3.171
+ UGA       Uganda  65.412   7.227  27.361           0.209                0.656   3.147
+ ETH     Ethiopia  61.008   6.416  32.576           0.224                0.656   2.932
+ KEN        Kenya  46.503  12.315  41.183           0.248                0.656   2.647
+ RWA       Rwanda  36.503  18.121  45.377           0.259                0.656   2.531
+ SEN      Senegal  30.648  22.260  47.092           0.264                0.656   2.490
+ GHA        Ghana  35.186  17.880  46.934           0.264                0.656   2.488
+ NGA      Nigeria  34.101  16.839  49.060           0.270                0.656   2.429
+ EGY        Egypt  17.977  29.213  52.810           0.279                0.656   2.351
+ ZAF South Africa   5.439  20.808  73.753           0.341                0.656   1.922
+
+==============================================================================
+SECTION C. PREMATURE DEINDUSTRIALISATION
+==============================================================================
+iso3      country      group  peak_year  peak_manf  gdppc_at_peak  latest_year  latest_manf   decline
+ SEN      Senegal     Africa       2002      21.59        3075.23         2024        14.22      7.36
+ ZAF South Africa     Africa       1995      21.25       10318.84         2024        12.80      8.45
+ UGA       Uganda     Africa       2009      20.08        2188.30         2024        15.11      4.97
+ NGA      Nigeria     Africa       1995      19.99        4797.51         2024         8.66     11.34
+ EGY        Egypt     Africa       2002      18.50       10143.51         2024        13.89      4.60
+ KEN        Kenya     Africa       2007      12.79        4116.45         2024         7.29      5.50
+ RWA       Rwanda     Africa       1997      12.04         907.98         2024         8.12      3.91
+ GHA        Ghana     Africa       2013      11.59        5593.77         2024        10.57      1.02
+ TZA     Tanzania     Africa       1998      11.07        1773.72         2023         8.40      2.67
+ ETH     Ethiopia     Africa       1997       7.12         826.00         2024         4.39      2.73
+ CHN        China Comparator       2006      32.00        7057.11         2024        24.84      7.15
+ MYS     Malaysia Comparator       1999      30.94       17428.63         2024        22.50      8.44
+ KOR  Korea, Rep. Comparator       2011      29.00       40719.23         2024        26.62      2.38
+ VNM     Viet Nam Comparator       2022      24.66       12979.76         2024        24.33      0.32
+ BGD   Bangladesh Comparator       2024      21.89        8486.78         2024        21.89      0.00
+ IND        India Comparator       1995      17.87        2469.35         2024        13.14      4.73
+
+Mean peak manufacturing VA share: Africa 15.60% at mean GDP per capita $4,374; comparators 26.06% at $14,857.
+
+==============================================================================
+SECTION D. THE DIGITAL SERVICES CHANNEL
+==============================================================================
+iso3      country     v2015     v2019     v2021     v2022     v2024  cagr_15_21  cagr_21_24
+ EGY        Egypt    809.90    836.40   1399.43   1655.40   1711.80        9.54        6.95
+ ETH     Ethiopia     97.00    132.00    161.52    151.10     42.59        8.87      -35.88
+ GHA        Ghana       NaN    103.00    118.00    214.00    131.00         NaN        3.55
+ KEN        Kenya    550.00    629.00    973.33   1041.12    853.40        9.98       -4.29
+ NGA      Nigeria     77.00    212.00    169.00    263.00    184.00       14.00        2.88
+ RWA       Rwanda     22.00     20.00     27.82     26.38     34.45        3.99        7.39
+ SEN      Senegal    274.00    156.00    160.00    197.00       NaN       -8.58         NaN
+ TZA     Tanzania     51.00     29.00     24.00     42.00     69.00      -11.81       42.19
+ UGA       Uganda     65.00     28.00     42.00     40.00     48.00       -7.02        4.55
+ ZAF South Africa    549.00    691.00    827.00    944.00   1527.00        7.07       22.68
+
+Total ICT service exports, ten economies, 2024: US$4,601 million.
+Combined labour force, 2024: 334,385,839.
+
+Absorption arithmetic:
+ revenue_per_worker           jobs  pct_of_labour_force  share_of_one_year_entrants
+               8000      575155.00                 0.17                        2.93
+              15000      306749.33                 0.09                        1.56
+              30000      153374.67                 0.05                        0.78
+
+==============================================================================
+SECTION E. DEMOGRAPHIC ARITHMETIC (UN WPP 2024, medium variant)
+==============================================================================
+iso3  annual_mean       total      country
+ NGA    6,167,520 160,355,532      Nigeria
+ ETH    3,569,508  92,807,209     Ethiopia
+ EGY    2,393,092  62,220,397        Egypt
+ TZA    1,953,630  50,794,369     Tanzania
+ UGA    1,386,214  36,041,562       Uganda
+ KEN    1,372,022  35,672,560        Kenya
+ ZAF    1,166,170  30,320,432 South Africa
+ GHA      788,130  20,491,369        Ghana
+ SEN      457,373  11,891,688      Senegal
+ RWA      353,704   9,196,313       Rwanda
+
+Ten economies: mean 19,607,363 people reach age 20 each year, 2025-2050; cumulative 509,791,431.
+Africa as a whole: mean 38,771,466 per year; cumulative 1,008,058,124.

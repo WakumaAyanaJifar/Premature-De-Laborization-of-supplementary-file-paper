@@ -1,0 +1,35 @@
+==============================================================================
+A. BUNDLE SENSITIVITY
+==============================================================================
+                               definition   n     beta   beta_h       sd   median  ratio_to_base
+                (a) manuscript definition 112    0.656    0.552    0.176    0.648          3.819
+       (b) computer and mathematical only  36    0.745    0.599    0.141    0.727          4.334
+  (c) manuscript, screened office support  97    0.694    0.584    0.144    0.660          4.037
+             (d) core BPO and freelancing  17    0.784    0.598    0.139    0.865          4.562
+(e) computer plus writing and translation  36    0.753    0.611    0.138    0.727          4.382
+
+Comparison bundle (physical and non-tradable): mean 0.172, n = 404
+Occupations dropped from (a) to reach (c): 15
+
+==============================================================================
+B. INFERENCE
+==============================================================================
+
+Observed difference in means: 0.4843
+Cluster bootstrap on SOC minor group, 10000 resamples: 95% interval [0.3978, 0.5538]
+Group-level permutation test, 10000 draws: p = 0.0000 (14 of 75 minor groups assigned to the bundle)
+
+==============================================================================
+C. DISTRIBUTIONS WITHIN BUNDLES
+==============================================================================
+pathway bundle   n= 112  mean 0.656  sd 0.176  p10 0.470  p25 0.560  median 0.648  p75 0.769  p90 0.893
+physical base    n= 404  mean 0.172  sd 0.154  p10 0.000  p25 0.055  median 0.133  p75 0.257  p90 0.380
+Share of pathway occupations with beta below the base mean (0.172): 0.9%
+Share of base occupations with beta above the pathway mean (0.656): 0.7%
+
+==============================================================================
+D. AGE OF LABOUR MARKET ENTRY
+==============================================================================
+age 15: ten economies mean 20,673,619 per year, cumulative 537,514,098; Africa mean 41,832,286 per year
+age 18: ten economies mean 20,010,336 per year, cumulative 520,268,726; Africa mean 40,036,600 per year
+age 20: ten economies mean 19,607,363 per year, cumulative 509,791,431; Africa mean 38,771,466 per year

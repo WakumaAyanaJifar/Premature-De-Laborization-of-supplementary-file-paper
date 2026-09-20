@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or the derived panel, please cite the paper."
+title: "Trajectory Exposure: replication materials"
+authors:
+  - family-names: "Ayana"
+    given-names: "Jifar Wakuma"
+    affiliation: "University of Science and Technology Beijing"
+license: MIT
+repository-code: "https://github.com/<user>/trajectory-exposure"
+date-released: "2026-09-21"
+keywords:
+  - trajectory exposure
+  - artificial intelligence
+  - structural transformation
+  - online labour
+  - ICT4D
+preferred-citation:
+  type: article
+  title: "Trajectory Exposure: Artificial Intelligence and the Digital Service Pathway in African Development"
+  authors:
+    - family-names: "Ayana"
+      given-names: "Jifar Wakuma"
+  year: 2026
+  journal: "Manuscript under review"

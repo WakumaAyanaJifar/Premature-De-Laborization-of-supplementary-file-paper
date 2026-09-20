@@ -1,0 +1,54 @@
+==============================================================================
+ONLINE LABOUR INDEX: DEMAND COMPOSITION AND EXPOSURE
+==============================================================================
+
+Series: daily new vacancies, May 2016 = 100. Coverage 2016-05-03 to 2024-08-22
+
+1. Exposure of each OLI occupational category (SOC mapping)
+                                       beta  beta_h   n_soc
+Writing and translation               0.759   0.683   9.000
+Software development and technology   0.751   0.588  27.000
+Microwork                             0.734   0.500   2.000
+Clerical and data entry               0.608   0.485  51.000
+Professional services                 0.524   0.504  55.000
+Sales and marketing support           0.460   0.492  22.000
+Creative and multimedia               0.408   0.314  18.000
+
+2. Demand composition, January to August, pre = [2019, 2020, 2021, 2022], post = [2023, 2024]
+                                         beta  share_pre  share_post  level_pre  level_post  share_change_pp  level_change_pct  relative_to_total_pct
+occupation                                                                                                                                           
+Writing and translation                  0.76      11.69        7.92      17.71       11.84            -3.78            -33.12                 -29.20
+Software development and technology      0.75      39.66       34.17      59.65       49.99            -5.49            -16.20                 -12.28
+Microwork                                0.73       8.59       11.12      13.87       16.06             2.53             15.78                  19.70
+Clerical and data entry                  0.61       6.69        7.74      10.42       11.38             1.04              9.28                  13.20
+Professional services                    0.52       2.81        3.87       4.36        5.60             1.06             28.58                  32.50
+Sales and marketing support              0.46      11.33       13.81      17.14       20.10             2.48             17.27                  21.19
+Creative and multimedia                  0.41      19.23       21.38      28.74       30.95             2.15              7.70                  11.62
+
+   Total index change over the same windows: -3.92%
+
+3. Does exposure predict the demand change? (n = 7 categories)
+   Pearson r, exposure vs change in share:            -0.672
+   Pearson r, exposure vs change relative to total:   -0.628
+   Spearman rho, exposure vs change in share:         -0.571
+   Spearman rho, exposure vs relative change:         -0.571
+
+4. Demand-weighted trajectory exposure
+   Unweighted occupational mean (manuscript):         0.656
+   OLI demand-weighted, pre-release composition:      0.636
+   OLI demand-weighted, post-release composition:     0.616
+   OLI demand-weighted, human ratings, pre:           0.519
+   OLI demand-weighted, excluding microwork, pre:     0.626
+
+5. Annual means, January to August, by occupation
+occupation  Clerical and data entry  Creative and multimedia  Microwork  Professional services  Sales and marketing support  Software development and technology  Total  Writing and translation
+date                                                                                                                                                                                            
+2016                            6.4                     24.1       12.3                    2.0                          9.5                                 35.1  101.8                     12.3
+2017                            7.3                     27.4       10.5                    2.9                         11.7                                 44.4  119.2                     15.0
+2018                            9.7                     30.2        6.9                    2.9                         13.2                                 49.0  129.7                     17.8
+2019                            8.2                     28.2        5.6                    2.7                         14.4                                 51.4  126.4                     15.9
+2020                            7.2                     28.7        5.5                    3.6                         16.0                                 64.0  142.0                     16.9
+2021                            9.8                     28.1       21.4                    5.2                         18.9                                 64.4  166.2                     18.3
+2022                           16.4                     30.0       22.9                    6.0                         19.3                                 58.8  173.0                     19.6
+2023                           13.7                     34.6       17.9                    6.3                         23.0                                 58.7  169.5                     15.3
+2024                            9.1                     27.3       14.3                    4.9                         17.2                                 41.3  122.4                      8.4
