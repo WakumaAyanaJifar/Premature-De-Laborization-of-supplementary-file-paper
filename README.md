@@ -34,7 +34,7 @@ or number in the manuscript is computed anywhere else.
 ## Reproducing
 
 ```bash
-git clone https://github.com/<user>/trajectory-exposure.git
+git clone https://github.com/WakumaAyanaJifar/Premature-De-Laborization-of-supplementary-file-paper.git
 cd trajectory-exposure
 pip install -r requirements.txt
 python scripts/fetch_wpp.py      # downloads two UN WPP files, about 47 MB
