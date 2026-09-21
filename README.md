@@ -34,16 +34,11 @@ or number in the manuscript is computed anywhere else.
 ## Reproducing
 
 ```bash
-git clone https://github.com/WakumaAyanaJifar/Premature-De-Laborization-of-supplementary-file-paper.git
-cd Premature-De-Laborization-of-supplementary-file-paper
+git clone https://github.com/[anonymized-for-review]/trajectory-exposure-replication.git
+cd trajectory-exposure-replication
 pip install -r requirements.txt
 python scripts/fetch_wpp.py      # downloads two UN WPP files, about 47 MB
 make all                         # or run the six scripts in src/ in order
-```
-
-`make all` writes text and CSV output to `results/` and vector PDFs to
-`figures/`. A clean run takes roughly three minutes, most of it in the 10,000
-cluster-bootstrap and permutation draws in `05_robustness.py`.
 
 ### What each script does
 
