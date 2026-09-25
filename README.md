@@ -2,102 +2,79 @@
 
 Replication materials for *Artificial Intelligence Exposure and the Premature De-laborization of Africa’s Digital Development Pathways*.
 
-Conventional measures of artificial intelligence exposure map model capabilities
-onto the occupations an economy already has. For economies whose growth strategy
-depends on occupations they have not yet acquired, that measures the wrong
-quantity. This repository contains the data, code and outputs behind the
-distinction between **stock exposure** and **trajectory exposure**, and behind
-the test of whether online labour demand has moved against exposure since the
-commercial release of general-purpose models.
+Conventional measures of artificial intelligence exposure map model capabilities onto the occupations an economy already has. For economies whose growth strategy depends on occupations they have not yet acquired, that measures the wrong quantity. This repository contains the data, code, and outputs behind the distinction between **stock exposure** and **trajectory exposure**, and behind the test of whether online labour demand has moved against exposure since the commercial release of general-purpose models.
 
-Everything in the paper is reproducible from this repository. No figure, table
-or number in the manuscript is computed anywhere else.
+Everything in the paper is reproducible from this repository. No figure, table, or number in the manuscript is computed anywhere else.
 
 ---
 
 ## Headline results
 
-| Result | Value | Produced by |
-|---|---|---|
-| Pathway bundle exposure against the physical base | 0.656 against 0.172, ratio 3.8 | `01_core_analysis.py` |
-| Robustness across four exposure and five bundle definitions | ratios 3.5 to 4.6 | `05_robustness.py` |
-| Cluster-bootstrap interval on the difference | [0.398, 0.554] | `05_robustness.py` |
-| Trajectory over stock exposure, ten economies | 1.9 to 3.2 | `01_core_analysis.py` |
-| Online labour demand share against exposure, 2021--22 vs 2023--24 | Spearman rho = -1.000, exact p = 0.0002 | `03_oli_demand.py` |
-| Supply-weighted trajectory exposure, by country | Kenya 0.703 to Senegal 0.436 | `04_oli_workers.py` |
-| Jobs supported by the 2024 ICT service export sector | 153,000 to 575,000 | `01_core_analysis.py` |
-| Annual entrants to 2050, ten economies | 19.6 million at age 20 | `01_core_analysis.py` |
+| Result                                                          | Value                                   | Produced by           |
+| --------------------------------------------------------------- | --------------------------------------- | --------------------- |
+| Pathway bundle exposure against the physical base               | 0.656 against 0.172, ratio 3.8          | `01_core_analysis.py` |
+| Robustness across four exposure and five bundle definitions     | ratios 3.5 to 4.6                       | `05_robustness.py`    |
+| Cluster-bootstrap interval on the difference                    | [0.398, 0.554]                          | `05_robustness.py`    |
+| Trajectory over stock exposure, ten economies                   | 1.9 to 3.2                              | `01_core_analysis.py` |
+| Online labour demand share against exposure, 2021–22 vs 2023–24 | Spearman rho = -1.000, exact p = 0.0002 | `03_oli_demand.py`    |
+| Supply-weighted trajectory exposure, by country                 | Kenya 0.703 to Senegal 0.436            | `04_oli_workers.py`   |
+| Jobs supported by the 2024 ICT service export sector            | 153,000 to 575,000                      | `01_core_analysis.py` |
+| Annual entrants to 2050, ten economies                          | 19.6 million at age 20                  | `01_core_analysis.py` |
 
 ---
 
+## What each script does
 
-
-```bash
-  
-
-### What each script does
-
-| Script | Produces |
-|---|---|
+| Script                    | Produces                                                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `src/01_core_analysis.py` | Exposure by occupation and sector, stock and trajectory exposure, manufacturing peaks, ICT export series, absorption arithmetic, demographic projections |
-| `src/02_supplementary.py` | Aggregate export series, absorption requirements, exposure-gap robustness, sector-mapping robustness |
-| `src/03_oli_demand.py` | Online Labour Index demand composition, the exposure-against-share-change test, demand-weighted trajectory exposure |
-| `src/04_oli_workers.py` | Portfolio exposure by world region and by country, African occupational mix over time |
-| `src/05_robustness.py` | Bundle sensitivity, cluster bootstrap, group permutation test, distributional statistics, age-of-entry sensitivity |
-| `src/06_figures.py` | All seven figures |
+| `src/02_supplementary.py` | Aggregate export series, absorption requirements, exposure-gap robustness, sector-mapping robustness                                                     |
+| `src/03_oli_demand.py`    | Online Labour Index demand composition, the exposure-against-share-change test, demand-weighted trajectory exposure                                      |
+| `src/04_oli_workers.py`   | Portfolio exposure by world region and by country, African occupational mix over time                                                                    |
+| `src/05_robustness.py`    | Bundle sensitivity, cluster bootstrap, group permutation test, distributional statistics, age-of-entry sensitivity                                       |
+| `src/06_figures.py`       | All seven figures                                                                                                                                        |
 
 ---
 
-##  Data
+## Data
 
-Every input is public. Files that the source licence permits us to redistribute
-are in `data/`; the rest are fetched by script. `data/PROVENANCE.md` records the
-exact origin, retrieval date and licence of each file, and
-`DATA-LICENCES.md` carries the attributions the licences require.
+Every input is public. Files that the source licence permits redistribution of are in `data/`; the rest are fetched by script. `data/PROVENANCE.md` records the exact origin, retrieval date, and licence of each file, and `DATA-LICENCES.md` carries the attributions the licences require.
 
-| File | Source | Licence |
-|---|---|---|
-| `occ_level.csv` | Eloundou, Manning, Mishkin & Rock (2024), replication repository | MIT |
-| `onet_jobzones.csv` | O*NET 29.1 database, Job Zones | CC BY 4.0 |
-| `oli_microwork.txt.gz` | Online Labour Index demand series, Kässi & Lehdonvirta | CC BY 4.0 |
-| `worker_countrydata_2024-09-02.txt.gz` | Online Labour Index worker supplement | CC BY 4.0 |
-| `countries_regions.txt` | Online Labour Index country-to-region map | CC BY 4.0 |
-| `wdi_raw_0*.csv` | World Bank World Development Indicators | CC BY 4.0 |
-| UN WPP 2024 single-age projections | fetched by `scripts/fetch_wpp.py` | see `DATA-LICENCES.md` |
+| File                                   | Source                                                           | Licence                |
+| -------------------------------------- | ---------------------------------------------------------------- | ---------------------- |
+| `occ_level.csv`                        | Eloundou, Manning, Mishkin & Rock (2024), replication repository | MIT                    |
+| `onet_jobzones.csv`                    | O*NET 29.1 database, Job Zones                                   | CC BY 4.0              |
+| `oli_microwork.txt.gz`                 | Online Labour Index demand series, Kässi & Lehdonvirta           | CC BY 4.0              |
+| `worker_countrydata_2024-09-02.txt.gz` | Online Labour Index worker supplement                            | CC BY 4.0              |
+| `countries_regions.txt`                | Online Labour Index country-to-region map                        | CC BY 4.0              |
+| `wdi_raw_0*.csv`                       | World Bank World Development Indicators                          | CC BY 4.0              |
+| UN WPP 2024 single-age projections     | fetched by `scripts/fetch_wpp.py`                                | see `DATA-LICENCES.md` |
 
 ### One caveat the data producers state, and we observe
 
-The Online Labour Index worker supplement is a platform-weighted sample. Its
-documentation states that the counts support **relative shares only** and that
-inferences about the level of labour supply over time are not warranted. Every
-quantity computed from it in this repository is a share or a share-weighted
-mean. Nothing is a level.
+The Online Labour Index worker supplement is a platform-weighted sample. Its documentation states that the counts support **relative shares only** and that inferences about the level of labour supply over time are not warranted. Every quantity computed from it in this repository is a share or a share-weighted mean. Nothing is a level.
 
 ---
 
 ## Repository layout
 
-```
+```text
 data/        inputs, with PROVENANCE.md
-scripts/     fetch_wpp.py, for the files we do not redistribute
+scripts/     fetch_wpp.py, for the files not redistributed
 src/         six analysis and figure scripts, run in numerical order
 results/     text and CSV output, regenerated by the scripts
 figures/     seven vector PDFs, regenerated by src/06_figures.py
 ```
 
-`results/` and `figures/` are committed so that the outputs can be inspected
-without running anything, and they are overwritten on a clean run.
+`results/` and `figures/` are committed so that the outputs can be inspected without running anything, and they are overwritten on a clean run.
 
 ---
 
 ## Citation
 
-If you use this code or the derived panel, please cite the paper and the
-underlying data sources listed in `DATA-LICENCES.md`. Machine-readable
-metadata is in `CITATION.cff`.
+If you use this code or the derived panel, please cite the paper and the underlying data sources listed in `DATA-LICENCES.md`. Machine-readable metadata is in `CITATION.cff`.
 
 ## Licence
 
 Code in `src/` and `scripts/` is released under the MIT Licence (`LICENSE`).
-Data files retain the licences of their original sources, recorded in
-`DATA-LICENCES.md`; redistributing them here does not relicense them.
+Data files retain the licences of their original sources, recorded in `DATA-LICENCES.md`; redistributing them here does not relicense them.
