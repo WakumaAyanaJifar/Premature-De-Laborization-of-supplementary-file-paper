@@ -1,7 +1,6 @@
 # Trajectory Exposure
 
-Replication materials for *Trajectory Exposure: Artificial Intelligence and the
-Digital Service Pathway in African Development*.
+Replication materials for *Artificial Intelligence Exposure and the Premature De-laborization of Africa’s Digital Development Pathways*.
 
 Conventional measures of artificial intelligence exposure map model capabilities
 onto the occupations an economy already has. For economies whose growth strategy
