@@ -33,11 +33,7 @@ or number in the manuscript is computed anywhere else.
 ## Reproducing
 
 ```bash
-git clone https://github.com/[anonymized-for-review]/trajectory-exposure-replication.git
-cd trajectory-exposure-replication
-pip install -r requirements.txt
-python scripts/fetch_wpp.py      # downloads two UN WPP files, about 47 MB
-make all                         # or run the six scripts in src/ in order
+  
 
 ### What each script does
 
