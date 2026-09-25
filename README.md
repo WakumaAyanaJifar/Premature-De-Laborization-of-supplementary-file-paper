@@ -48,7 +48,7 @@ or number in the manuscript is computed anywhere else.
 
 ---
 
-## Data
+##  Data
 
 Every input is public. Files that the source licence permits us to redistribute
 are in `data/`; the rest are fetched by script. `data/PROVENANCE.md` records the
